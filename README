@@ -50,4 +50,4 @@ tutorial = {
 	Step 5: save. your scss will be compiled into valid css when you save if you are running compass watch. otherwise, just run compass compile.
 	Step 6: Check out /css/stylesheets/style.css to see your compiled CSS
 }	
-	
+	 
