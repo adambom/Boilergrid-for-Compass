@@ -1,0 +1,18 @@
+/* Paul Irish HTML 5 Boilerplate Port to SASS*/
+/* screen.scss*/
+/* This is the daddy sheet. It's the boss. */
+
+/* make sure to compile to minified for production using */
+
+// To configure blueprint, edit the partials/base.sass file.
+@import "partials/base";
+
+// Import blueprint grid only
+@import "blueprint/grid";
+
+// Combine the partials into a single screen stylesheet.
+@import "partials/boilerplate/boilerplate-top";  // or boilerplate-top.min
+@import "partials/main"; // Your applications styles. Can be scss, sass, or plain 'ol CSS
+@import "partials/boilerplate/boilerplate-bottom"; // or boilerplate-top.min
+
+/* fin */
