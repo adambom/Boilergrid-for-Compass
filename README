@@ -1,53 +1,53 @@
-	repo = {
-		name: Boilergrid for Compass,
-	    author: {
-			name: Adam Savitzky,
-			email: asavitzky@forio.com,
-			url: github.com/adambom
-		},
-		description: [
-		    This is a mashup of Paul Irish's HTML5 boilerplate, which is a badass, bullet-proof, and future-ready html 5 and css template that makes your shit work nice, with the blueprint grid system, which helps you create grid based layouts. It's all built in SCSS (.scss file ext) (a.k.a SASS - or syntactically awesome stylesheets), which is backwards compatible with sass (.sass file ext) and css. It's all rolled up using the compass framework (compass-style.org). Since the code uses blueprint/semantic, you can make finally make your grid-based layouts semantic. No more span-10 classes in your markup. This is accomplished using the column, prepend, append, last, etc. mixins.
-		],
-		install: {
-			Step 1: $ sudo gem install scss
-			Step 2: $ sudo gem install sass
-			Step 3: $ sudo gem install compass
-			Step 4: $ cd ~/
-			Step 5: $ git clone git@github.com:adambom/Boilergrid-for-Compass.git
-			Step 6: $ cp -r Boilergrid-for-Compass myapp
-			Step 7: $ cd myapp
-			Step 8: $ compass watch
-		},
-		references: [
-			Paul Irish's HTML5 Boilerplate: "http://html5boilerplate.com/",
-			Compass Framework: "http://compass-style.org/",
-			"Syntastically Awesome Style Sheets (SASS), aka Sassy CSS (SCSS)" : http://sass-lang.com/
-		],
-		notes : [
-			"If you don't know SASS, you should learn it (Learn to write scss to be specific). It's the best thing to happen to CSS since CSS. If you don't want to/don't feel like learning it, then compile the project once and then add all your styles in CSS to /css/stylesheets/style.css starting at line 282. This stylesheet is valid CSS, and you can use it perfectly well without recompiling anything. You will need to recompile if you change any of the blueprint parameters, like grid width or gutter width."
-		]
-	}
+repo = {
+	name: Boilergrid for Compass,
+    author: {
+		name: Adam Savitzky,
+		email: asavitzky@forio.com,
+		url: github.com/adambom
+	},
+	description: [
+	    This is a mashup of Paul Irish's HTML5 boilerplate, which is a badass, bullet-proof, and future-ready html 5 and css template that makes your shit work nice, with the blueprint grid system, which helps you create grid based layouts. It's all built in SCSS (.scss file ext) (a.k.a SASS - or syntactically awesome stylesheets), which is backwards compatible with sass (.sass file ext) and css. It's all rolled up using the compass framework (compass-style.org). Since the code uses blueprint/semantic, you can make finally make your grid-based layouts semantic. No more span-10 classes in your markup. This is accomplished using the column, prepend, append, last, etc. mixins.
+	],
+	install: {
+		Step 1: $ sudo gem install scss
+		Step 2: $ sudo gem install sass
+		Step 3: $ sudo gem install compass
+		Step 4: $ cd ~/
+		Step 5: $ git clone git@github.com:adambom/Boilergrid-for-Compass.git
+		Step 6: $ cp -r Boilergrid-for-Compass myapp
+		Step 7: $ cd myapp
+		Step 8: $ compass watch
+	},
+	references: [
+		Paul Irish's HTML5 Boilerplate: "http://html5boilerplate.com/",
+		Compass Framework: "http://compass-style.org/",
+		"Syntastically Awesome Style Sheets (SASS), aka Sassy CSS (SCSS)" : http://sass-lang.com/
+	],
+	notes : [
+		"If you don't know SASS, you should learn it (Learn to write scss to be specific). It's the best thing to happen to CSS since CSS. If you don't want to/don't feel like learning it, then compile the project once and then add all your styles in CSS to /css/stylesheets/style.css starting at line 282. This stylesheet is valid CSS, and you can use it perfectly well without recompiling anything. You will need to recompile if you change any of the blueprint parameters, like grid width or gutter width."
+	]
+}
 
-	tutorial = {
-		Step 1: install Boilergrid (see repo.install)
-		Step 2: add markup to /index.html (<div id="wrapper"></div>)
-		Step 3: function setBluePrintParameters () {
-			file: /css/src/partials/_base.scss,
-			set $blueprint-grid-columns: 24;,
-			set $blueprint-container-size: 950px;,
-			set $blueprint-grid-margin: 10px;,
-			set $blueprint-grid-width: ($blueprint-container-size + $blueprint-grid-margin) / $blueprint-grid-columns - $blueprint-grid-margin;
+tutorial = {
+	Step 1: install Boilergrid (see repo.install)
+	Step 2: add markup to /index.html (<div id="wrapper"></div>)
+	Step 3: function setBluePrintParameters () {
+		file: /css/src/partials/_base.scss,
+		set $blueprint-grid-columns: 24;,
+		set $blueprint-container-size: 950px;,
+		set $blueprint-grid-margin: 10px;,
+		set $blueprint-grid-width: ($blueprint-container-size + $blueprint-grid-margin) / $blueprint-grid-columns - $blueprint-grid-margin;
+	}
+	Step 4: add scss, sass, or plain 'ol css to /css/src/partials/_main.scss. These are your app's styles.
+	   #wrapper {
+		   @include column(20);
+		   @include prepend(2);
+		   @inlcude append(2);
+		   @include last;
+		   /* Your styles below */
+		   background-color:green
 		}
-		Step 4: add scss, sass, or plain 'ol css to /css/src/partials/_main.scss. These are your app's styles.
-		   #wrapper {
-			   @include column(20);
-			   @include prepend(2);
-			   @inlcude append(2);
-			   @include last;
-			   /* Your styles below */
-			   background-color:green
-			}
-		Step 5: save. your scss will be compiled into valid css when you save if you are running compass watch. otherwise, just run compass compile.
-		Step 6: Check out /css/stylesheets/style.css to see your compiled CSS
-	}	
+	Step 5: save. your scss will be compiled into valid css when you save if you are running compass watch. otherwise, just run compass compile.
+	Step 6: Check out /css/stylesheets/style.css to see your compiled CSS
+}	
 	
