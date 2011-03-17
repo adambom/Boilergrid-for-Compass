@@ -22,7 +22,10 @@ repo = {
 		Paul Irish's HTML5 Boilerplate: http://html5boilerplate.com/,
 		Compass Framework: http://compass-style.org/,
 		Syntastically Awesome Style Sheets (SASS), aka Sassy CSS (SCSS) : http://sass-lang.com/
-	}
+	},
+	notes : [
+		If you don't know SASS, you should learn it (Learn to write scss to be specific). It's the best thing to happen to CSS since CSS. If you don't want to/don't feel like learning it, then compile the project once and then add all your styles in CSS to /css/stylesheets/style.css starting at line 282. This stylesheet is valid CSS, and you can use it perfectly well without recompiling anything. You will need to recompile if you change any of the blueprint parameters, like grid width or gutter width.
+	]
 }
 
 tutorial = {
