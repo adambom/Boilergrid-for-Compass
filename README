@@ -50,4 +50,25 @@ tutorial = {
 	Step 5: save. your scss will be compiled into valid css when you save if you are running compass watch. otherwise, just run compass compile.
 	Step 6: Check out /css/stylesheets/style.css to see your compiled CSS
 }	
-	 
+
+More:
+//////////////////////////
+
+I've set up a repo called Boilergrid, which is a nice semantic implementation of blueprint using compass. I've integrated Paul Irish's HTML5 boilerplate for cross-browser, optimized markup.
+
+Add all of your styles in scss or css in /css/src/partials/_main.scss
+
+Set the width of blueprint elements like column width, grid width, and gutter width in /css/src/partials/_base.scss
+
+when you want to specify column width for element #myelement, add the following scss to /css/src/partials/_main.scss:
+
+    #myelement {
+        @include column(number-columns) // where number-columns is the integer number of columns to span. Equivalent to class="span-numbercolumns".
+    }
+
+To prepend or append columns to an element use the @include append(number-columns), or @include prepend(number-columns) mixins. That is equivalent to class="prepend-numbercolumns".
+
+To indicate the last column in a row, use the @include last mixin. This is equivalent to class="last". e.g.
+    #myelement {
+        @include last;
+ 	}
